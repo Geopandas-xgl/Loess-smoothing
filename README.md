@@ -120,7 +120,7 @@ For more information, refer to [loess.sd documentation](https://www.rdocumentati
 
 #### **Example Usage**
 
-- Suppose you have an Excel file named `Zhang-2018-Loess.xlsx` with a sheet titled `PTB_dU` containing `age` and `dU` values.
+- Suppose you have an Excel file named `Zhang-2018-Geology.xlsx` with a sheet titled `PTB_dU` containing `age` and `dU` values.
 
 - Update the script:
 
