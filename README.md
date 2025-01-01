@@ -1,4 +1,4 @@
-# Loess Smoothing and Visualization Program
+# Loess smoothing
 
 ------
 
