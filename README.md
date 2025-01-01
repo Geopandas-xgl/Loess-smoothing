@@ -1,7 +1,5 @@
 # Loess smoothing
 
-------
-
 #### **Introduction**
 
 This R program performs loess smoothing on isotope data and generates visualizations with confidence intervals. It is designed for geochronological or paleoclimatic studies where smoothing and plotting of isotopic data, such as Uranium, Barium, and Lithium isotopes, are required.
@@ -86,7 +84,7 @@ For more information, refer to [loess.sd documentation](https://www.rdocumentati
 
    - Adjust loess smoothing parameters as needed:
 
-     - `span`: Controls the degree of smoothing. Default is `0.7`.
+     - `span`: Controls the degree of smoothing. Default is `0.61`.
      - `nsigma`: Sets the confidence interval range. Default is `2`.
 
 4. **Run the Program**
@@ -129,7 +127,7 @@ For more information, refer to [loess.sd documentation](https://www.rdocumentati
   ```r
   section <- "PTB_dU"
   setwd("C:/Users/19328/Documents/github/R-code/Loess/Template_horizontal")
-  span <- 0.7  # Smoothing parameter
+  span <- 0.61  # Smoothing parameter
   nsigma <- 2  # Confidence interval width
   ```
 
