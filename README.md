@@ -102,6 +102,24 @@ If these packages are not installed, the program will install them automatically
 
 ------
 
+#### **Loess Smoothing Parameters**
+
+- **`span`**: Refers to the fraction of the data used to fit each local polynomial in the smoothing process, ranging from 0 to 1. Larger values produce smoother curves.
+- **`nsigma`**: Refers to the standard deviation of the residuals (RSD). For example, `n = 1` represents "1 RSD," and `n = 2` represents "2 RSD."
+
+For more information, refer to [loess.sd documentation](https://www.rdocumentation.org/packages/msir/versions/1.3.3/topics/loess.sd).
+
+------
+
+#### **Saved Data File**
+
+- **Y_loess:** Loess-smoothed isotope values.
+- **X_loess:** Loess-smoothed time values.
+- **upper:** Upper limit of the loess isotope, calculated as `X + nsigma`.
+- **lower:** Lower limit of the loess isotope, calculated as `X - nsigma`.
+
+------
+
 #### **Example Usage**
 
 - Suppose you have an Excel file named `Zhang-2018-Loess.xlsx` with a sheet titled `PTB_dU` containing `age` and `dU` values.
@@ -153,24 +171,6 @@ If these packages are not installed, the program will install them automatically
 3. **Output Directory**
 
    - Ensure you have write permissions for the working directory.
-
-------
-
-#### **Loess Smoothing Parameters**
-
-- **`span`**: Refers to the fraction of the data used to fit each local polynomial in the smoothing process, ranging from 0 to 1. Larger values produce smoother curves.
-- **`nsigma`**: Refers to the standard deviation of the residuals (RSD). For example, `n = 1` represents "1 RSD," and `n = 2` represents "2 RSD."
-
-For more information, refer to [loess.sd documentation](https://www.rdocumentation.org/packages/msir/versions/1.3.3/topics/loess.sd).
-
-------
-
-#### **Saved Data File**
-
-- **Y_loess:** Loess-smoothed isotope values.
-- **X_loess:** Loess-smoothed time values.
-- **upper:** Upper limit of the loess isotope, calculated as `X + nsigma`.
-- **lower:** Lower limit of the loess isotope, calculated as `X - nsigma`.
 
 ------
 
