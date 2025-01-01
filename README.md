@@ -156,7 +156,7 @@ For more information, refer to [loess.sd documentation](https://www.rdocumentati
 
    - Ensure the Excel file exists in the specified directory.
    - Verify the sheet name matches the `section` variable.
-   - Check column names for the isotopic values and the corresponding time.
+   - Verify column names for isotopic values and time match variable names.
 
 2. **Package Errors**
 
