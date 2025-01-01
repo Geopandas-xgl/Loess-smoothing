@@ -178,4 +178,4 @@ For more information, refer to [loess.sd documentation](https://www.rdocumentati
 
 This program is designed to simplify the process of smoothing and visualizing isotopic data for educational and research purposes. Feedback and contributions are welcome! Email: [xiongguolin@smail.nju.edu.cn](mailto:xiongguolin@smail.nju.edu.cn)
 
-Update version Links: [Geopandas-xgl](https://github.com/Geopandas-xgl/R-code/tree/master/Loess%20smoothing) 
+Update version Links: [Geopandas-xgl](https://github.com/Geopandas-xgl/Loess-smoothing) 
