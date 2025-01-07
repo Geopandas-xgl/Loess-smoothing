@@ -120,22 +120,19 @@ For more information, refer to [loess.sd documentation](https://www.rdocumentati
 
 #### **Example Usage**
 
-- Suppose you have an Excel file named `Zhang-2018-Geology.xlsx` with a sheet titled `PTB_dU` containing `age` and `dU` values.
+- Download "Loess smoothing.R" and "Zhang-2018-Geology.xlsx" file from [Geopandas-xgl](https://github.com/Geopandas-xgl/Loess-smoothing).
 
 - Update the script:
 
   ```r
-  section <- "PTB_dU"
-  setwd("C:/Users/19328/Documents/github/R-code/Loess/Template_horizontal")
-  span <- 0.61  # Smoothing parameter
-  nsigma <- 2  # Confidence interval width
+  setwd("<absolute pathway of "Zhang-2018-Geology" in your computer>")
   ```
 
 - Run the script. The program will:
 
-  - Perform loess smoothing on the data in `PTB_dU`.
   - Divide data into four groups based on profiles (Dawen, Dajiang, Kamura, Taskent).
-  - Save results in the `PTB_dU` subdirectory.
+  - Automatically create "PTB_dU" folder
+  - Save figure and loess data in the `PTB_dU` subdirectory.
 
 - The test data is derived from ([Zhang et al., 2018, Geology](https://pubs.geoscienceworld.org/gsa/geology/article-abstract/46/4/327/527934/Congruent-Permian-Triassic-238U-records-at)).
 
