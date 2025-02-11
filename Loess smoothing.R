@@ -2,7 +2,7 @@
 rm(list = ls())
 
 # Install and load required packages
-if(!require('xlsx')) {install.packages('xlsx'); library(xlsx)}
+if(!require('openxlsx')) {install.packages('openxlsx'); library(openxlsx)}
 if(!require('msir')) {install.packages('msir'); library(msir)}
 if(!require('ggplot2')) {install.packages('ggplot2'); library(ggplot2)}
 
@@ -15,7 +15,7 @@ section <- "PTB_dU"
 file_name  <- "Zhang-2018-Geology";
 
 # Load data from Excel file (update file name)
-data_raw <- read.xlsx(paste0(file_name,".xlsx"), sheetName = section)
+data_raw <- read.xlsx(paste0(file_name,".xlsx"), sheet = section)
 
 # Rename columns for clarity (update column name)
 colnames(data_raw)[colnames(data_raw) == "dU"] <- "delta"
