@@ -24,7 +24,7 @@ To run this program, ensure the following are installed on your system:
 
 The program uses the following R packages:
 
-- `xlsx`: For reading and writing Excel files.
+- `openxlsx`: For reading and writing Excel files.
 - `msir`: For loess smoothing with standard deviation.
 - `ggplot2`: For creating high-quality plots.
 
